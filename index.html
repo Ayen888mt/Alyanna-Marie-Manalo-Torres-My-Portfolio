@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alyanna Marie M. Torres - Personal Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="bodyTag">
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <span class="avatar-badge">AT</span>
+      <span class="brand-name">Alyanna Marie Manalo Torres</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#playlists">Playlists</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    
+    <!-- Moon / Sun Icon Toggle -->
+    <button id="themeToggleBtn" class="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle Theme">
+      <i id="themeIcon" class="fa-solid fa-moon"></i>
+    </button>
+  </header>
+
+  <main class="container">
+    
+    <!-- Hero / Profile Section -->
+    <section id="about" class="hero-card">
+      <div class="hero-content">
+        <div class="profile-avatar-container">
+          <img src="Alyanna.jpg" alt="Alyanna Marie Manalo Torres" class="profile-avatar" />
+          <span class="status-indicator"></span>
+        </div>
+        
+        <div class="hero-text">
+          <span class="welcome-badge">WELCOME TO MY PORTFOLIO</span>
+          <h1 class="hero-title">Alyanna Marie M. Torres</h1>
+          <p class="hero-subtitle">Bachelor of Science in Information Technology 3rd Year Student</p>
+          <p class="hero-description">
+            A 3rd-year BSIT student majoring in Service Management Program at LSPU Los Baños Campus, combining technical skills, 
+            multimedia design, and practical business experience. Building on a foundation in financial management and 
+            two years of running an online business alongside retail operations,  
+            I apply tech-driven solutions to optimize service and business needs. 
+            A versatile learner, proactive problem solver, and attentive communicator,
+             I consistently seek new ideas to deliver efficient, real-world outcomes.
+          </p>
+          
+          <div class="info-chips">
+            <div class="chip">
+              <span class="chip-label">YEAR LEVEL</span>
+              <span class="chip-val">3rd Year BSIT</span>
+            </div>
+            <div class="chip">
+              <span class="chip-label">LOCATION</span>
+              <span class="chip-val">Philippines</span>
+            </div>
+            <div class="chip chip-highlight">
+              <span class="chip-label">STATUS</span>
+              <span class="chip-val">Open to Internships</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section (W3Schools Links) -->
+    <section id="skills" class="skills-section">
+      <div class="section-header">
+        <h2>Technical Skills</h2>
+        <p>A collection of technical proficiencies and tools I work with during my IT studies.</p>
+      </div>
+
+      <div class="skills-grid">
+        <a href="https://www.w3schools.com/whatis/" target="_blank" class="skill-card pink">
+          <div class="skill-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Web Development</h3>
+          <p>Building responsive and interactive web applications from scratch.</p>
+          <div class="skill-progress"><div class="bar" style="width: 88%;"></div></div>
+        </a>
+
+        <a href="https://www.w3schools.com/html/" target="_blank" class="skill-card purple">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <h3>HTML5 & CSS3</h3>
+          <p>Crafting semantic markup and clean, modern, responsive CSS styling.</p>
+          <div class="skill-progress"><div class="bar" style="width: 92%;"></div></div>
+        </a>
+
+        <a href="https://www.w3schools.com/js/" target="_blank" class="skill-card blue">
+          <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+          <h3>JavaScript (ES6+)</h3>
+          <p>Adding client-side interactivity, dynamic DOM manipulation, and logic.</p>
+          <div class="skill-progress"><div class="bar" style="width: 80%;"></div></div>
+        </a>
+
+        <a href="https://www.w3schools.com/sql/" target="_blank" class="skill-card purple">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>SQL & Databases</h3>
+          <p>Designing relational database schemas, writing queries, and management.</p>
+          <div class="skill-progress"><div class="bar" style="width: 85%;"></div></div>
+        </a>
+
+        <a href="https://www.w3schools.com/css/css_rwd_intro.asp" target="_blank" class="skill-card pink">
+          <div class="skill-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h3>Responsive Layouts</h3>
+          <p>Optimizing layouts for mobile phones, tablets, and desktop displays.</p>
+          <div class="skill-progress"><div class="bar" style="width: 90%;"></div></div>
+        </a>
+
+        <a href="https://www.w3schools.com/howto/default.asp" target="_blank" class="skill-card blue">
+          <div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div>
+          <h3>Systems & BPMN</h3>
+          <p>Analyzing business processes, creating swimlanes, and service models.</p>
+          <div class="skill-progress"><div class="bar" style="width: 86%;"></div></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Spotify Playlists Section (BTS & SEVENTEEN) -->
+    <section id="playlists" class="skills-section">
+      <div class="section-header">
+        <h2><i class="fa-brands fa-spotify" style="color: #1db954;"></i> Spotify Playlists</h2>
+        <p>Welcome To My BTS and SEVENTEEN playlists to enjoy while exploring my portfolio.</p>
+      </div>
+
+      <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+        <div class="skill-card pink" style="padding: 1.2rem;">
+          <h3 style="margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <i class="fa-brands fa-spotify" style="color: #881db9;"></i> BTS Playlist
+          </h3>
+          <div style="position: relative; padding-bottom: 152px; height: 0; overflow: hidden; border-radius: 12px;">
+            <iframe 
+              style="position: absolute; top:0; left:0; width:100%; height:100%; border:0; border-radius:12px;" 
+              src="https://open.spotify.com/embed/playlist/37i9dQZF1DX08mhnhv6g9b?utm_source=generator&theme=0" 
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="skill-card purple" style="padding: 1.2rem;">
+          <h3 style="margin-bottom: 12px; display: flex; align-items: center; gap: 8px;">
+            <i class="fa-brands fa-spotify" style="color: #1db954;"></i> SEVENTEEN Playlist
+          </h3>
+          <div style="position: relative; padding-bottom: 152px; height: 0; overflow: hidden; border-radius: 12px;">
+            <iframe 
+              style="position: absolute; top:0; left:0; width:100%; height:100%; border:0; border-radius:12px;" 
+              src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXa2ShUct1Fm?utm_source=generator&theme=0" 
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-card">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Get in Touch</h2>
+          <p>Have a question or want to collaborate on a project? Send me a message!</p>
+          
+          <div class="contact-details">
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <small>Email</small>
+                <strong>ayenmanator888@gmail.com</strong>
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <small>Degree Program</small>
+                <strong>BS Information Technology major in Service Mangement Program</strong>
+              </div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <small>Location</small>
+                <strong>Laguna, Philippines</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form action="https://formsubmit.co/ayenmanator888@gmail.com" method="POST" class="contact-form">
+  
+  <!-- Mga nakatagong setting para hindi mag-spam at maayos ang email -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Portfolio Message!">
+
+  <div class="form-group">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="e.g., Juan Dela Cruz" required />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="e.g., juan@example.com" required />
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="SEND" required></textarea>
+  </div>
+
+  <button type="submit" class="submit-btn">
+    <i class="fa-solid fa-paper-plane"></i> Send Message
+  </button>
+
+</form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Alyanna Marie Manalo Torres. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = document.getElementById('bodyTag');
+      const themeIcon = document.getElementById('themeIcon');
+
+      body.classList.toggle('light-mode');
+
+      if (body.classList.contains('light-mode')) {
+        themeIcon.className = 'fa-solid fa-sun';
+      } else {
+        themeIcon.className = 'fa-solid fa-moon';
+      }
+    }
+  </script>
+</body>
+</html>
